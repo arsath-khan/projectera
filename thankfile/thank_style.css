@@ -81,19 +81,18 @@ p #ul1 {
   border-radius: 50%;
   line-height: calc(47px - 12px);
   font-size:18px;
-  color: #262626;
   transition: .5s;
 }
 
-#ul1 li:nth-child(1) a:hover .fa {
+#ul1 li:nth-child(1) a .fa {
   color: #3b5998;
 }
 
-#ul1 li:nth-child(2) a:hover .fa {
+#ul1 li:nth-child(2) a .fa {
   color: #00aced;
 }
 
-#ul1 li:nth-child(3) a:hover .fa {
+#ul1 li:nth-child(3) a .fa {
   color: #007bb6;
 }
 /*--------------------------------responsive-----------------------------*/
