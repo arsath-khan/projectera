@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box
+  padding:0;
+  margin:0;
+}
+body{
+  font-family:roboto;
+  min-height: 1000px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:'Nova Round' , cursive;
+}
+header{
+  line-height: 10px;
+  position: static;
+  top:0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  padding: 40px 80px;
+  background: linear-gradient(to top,transparent,rgba(0,0,0,0.9));
+  background-color:#ffae00;
+  margin-bottom: 0;
+
+}
+header #logo{
+  font-size: 28px;
+  font-weight: 700;
+  color:#ffae00;
+  font-style: italic;
+  text-align: center;
+  font-family: roboto;
+  float: left;
+}
+header #logo:hover{
+  transform: rotate(3deg)scale(1.5);
+}
+header #menu{
+  float: right;
+  margin-right: 0;
+
+
+}
+header #menu:hover{
+transform: scale(1.1);
+}
+header ul li{
+  display: inline-block;
+  margin-right: 10px;
+
+  margin-bottom: 20px;
+
+}
+header ul li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  color:#ffae00;
+  padding-bottom: 2px;
+  margin: 0 5px 0 0;
+  font-weight:300;
+  letter-spacing: 1px;
+}
+header ul li:nth-child(5){
+  margin-right: 0px;
+}
+header ul li :hover{
+  transform: scale(1.1);
+  color: #ffae00;
+  text-decoration: none;
+  box-shadow: 0 0px 25px rgba(0,0,0,0);
+
+
+}
+header ul li a:before{
+  position:absolute;
+  content:'';
+  left:0;
+  bottom:0;
+  height:3px;
+  width:100%;
+  background:#ffc107;
+  transform:scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+
+
+}
+header ul li a:hover:before{
+  transform:scaleX(1);
+  transform-origin: left;
+  text-decoration:none;
+  color:white;
+
+}
+#container{
+  padding:0;
+  margin:0;
+
+}
+img{
+  height:300px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+
+}
+.post{
+  width:100%;
+}
+#hold{
+  width:300px;
+}
+#content{
+  padding: 0;
+  margin:20px 0 0 0;
+}
+.ajax-loader {
+	margin-top:50px;
+    display: block;
+    text-align: center;
+}
+.ajax-loader img {
+    width: 100px;
+	height:100px;
+    vertical-align: middle;
+}
+#total_count{
+
+}
+
+
+
+
+/*-----------------------------response---------------*/
+
+@media (max-width:950px){
+  header{
+    padding: 0;
+    margin: 0;
+  }
+header #logo{
+  float: none;
+  padding:15px 0 0 0;
+  margin:0;
+}
+header #menu{
+  text-align: center;
+  float: none;
+  margin: 20px;
+  padding: 0;
+  box-shadow:0;
+}
+}
+@media (max-width:450px){
+  header #menu li a{
+
+  font-size: 0.9em;
+  }
